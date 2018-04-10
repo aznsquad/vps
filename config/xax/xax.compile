@@ -1,7 +1,8 @@
 #!/bin/bash
 # this file contains all commands to compile and install the daemon
 
-chmod +x autogen.sh
-./autogen.sh
-./configure --disable-dependency-tracking --enable-tests=no --without-gui --without-miniupnpc --with-incompatible-bdb CFLAGS="-march=native" LIBS="-lcurl -lssl -lcrypto -lz"
-make
+cd Artax
+sudo chmod +x autogen.sh
+sudo ./autogen.sh
+sudo ./configure --disable-dependency-tracking --enable-tests=no --without-gui --without-miniupnpc --with-incompatible-bdb CFLAGS="-march=native" LIBS="-lcurl -lssl -lcrypto -lz"
+sudo make
