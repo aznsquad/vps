@@ -1,6 +1,6 @@
 ## Installation
 
-SSH to your VPS and clone the Github repository:
+SSH to your VPS and clone the Github repository as root:
 
 ```bash
 git clone https://github.com/aznsquad/vps.git && cd vps
@@ -44,10 +44,14 @@ To wipe the masternode:
 
 FYI:
 
-+ the wallet and data are stored in ```/var/lib/masternodes/mdcrN/``` where n is the masternode number (1,2, 3...). You will find debug.log here.
-+ A 1GB Vultr instance (5 USD one) should be able to serve 5-6 masternodes without issue. Use the top command to monitor mem / cpu usage to judge.
-+ Want to add another masternode down the line? EZ PZ:  ```./install.sh -p mdcr -c 4``` (assume you had 3 setup before).
-+ New coin update? Sure: ```./install.sh -p mdcr -c 4 -u``` (remember to set number after -c to the number of nodes you have running).
+Wallet and data are stored in:
+```cd /var/lib/masternodes/mdcrN/```
+Where n is the masternode number (1,2, 3...). You will find debug.log here.
+
+A 512M Vultr instance ($2.50/mo) should be able to serve 5-6 masternodes without issue.
+
+Coin update:
+```./install.sh -p mdcr -c 4 -u``` (remember to set number after -c to the number of nodes you have running).
 
 
 Bitcoin Donation address for aznsquad:
@@ -65,11 +69,6 @@ Feel free to use my reflink to signup and receive a bonus w/ vultr:
 
 These are only a couple of examples for typical setups. Check my [easy step-by-step guide for [vultr](/docs/masternode_vps.md) that will guide you through the hardest parts.
 
-**Install & configure 4 PIVX masternodes:**
-
-```bash
-./install.sh -p pivx -c 4
-```
 
 **Install 4 PIVX masternodes, update daemon:**
 
@@ -81,12 +80,6 @@ These are only a couple of examples for typical setups. Check my [easy step-by-s
 
 ```bash
 ./install.sh -p pivx -c 6 -r "tags/v3.0.5.1"
-```
-
-**Wipe all PIVX masternode data:**
-
-```bash
-./install.sh -p pivx -w
 ```
 
 **Install 2 PIVX masternodes and configure sentinel monitoring:**
