@@ -53,9 +53,9 @@ A 512M Vultr instance ($2.50/mo) should be able to serve 5-6 masternodes without
 Coin update:
 ```./install.sh -p mdcr -c 4 -u``` (remember to set number after -c to the number of nodes you have running).
 
+---
 
 Bitcoin Donation address for aznsquad:
-
 
 BTC ```1SzFHBnsYPfcBXTRbPYDWmDWfEvhTankN```
 
@@ -92,9 +92,8 @@ These are only a couple of examples for typical setups. Check my [easy step-by-s
 
 ```https://github.com/masternodes/vps.git```
 
-
+---
 
 Bitcoin Donation address for aznsquad:
-
 
 BTC ```1SzFHBnsYPfcBXTRbPYDWmDWfEvhTankN```
