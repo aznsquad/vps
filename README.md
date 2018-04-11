@@ -42,11 +42,11 @@ To wipe the masternode:
 ./install.sh -p mdcr -w
 ```
 
-FYI:
+**FYI:**
 
 Wallet and data are stored in:
 ```cd /var/lib/masternodes/mdcrN/```
-Where n is the masternode number (1,2, 3...). You will find debug.log here.
+where n is the masternode number (1,2, 3...). You will find debug.log here.
 
 A 512M Vultr instance ($2.50/mo) should be able to serve 5-6 masternodes without issue.
 
