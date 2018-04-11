@@ -92,3 +92,5 @@ These are only a couple of examples for typical setups. Check my [easy step-by-s
 ```bash
 ./install.sh -p pivx -c 2 -s
 ```
+
+Originally from https://github.com/masternodes/vps.git
