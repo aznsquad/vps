@@ -1,6 +1,6 @@
 ## Installation
 
-SSH to your VPS and clone the Github repository as root:
+Using Artax as an example, SSH to your VPS and clone the Github repository as root:
 
 ```bash
 git clone https://github.com/aznsquad/vps.git && cd vps
@@ -9,37 +9,37 @@ git clone https://github.com/aznsquad/vps.git && cd vps
 Install & configure your desired masternode with options:
 
 ```bash
-./install.sh -p mdcr
+./install.sh -p xax
 ```
 
 or Install 2 more masternodes:
 ```bash
-./install.sh -p mdcr -c 2
+./install.sh -p xax -c 2
 ```
 
 Place keygen in:
 ```bash
-nano /etc/masternodes/mdcr_n1.conf
+nano /etc/masternodes/xax_n1.conf
 ```
 
 Activate the masternode(s) by typing:
 ```bash
-/usr/local/bin/activate_masternodes_mdcr
+/usr/local/bin/activate_masternodes_xax
 ```
 
 If necessary to restart the node, type:
 ```bash
-systemctl restart mdcr_n1
+systemctl restart xax_n1
 ```
 
 To check the masternode status:
 ```bash
-/usr/local/bin/madcoind -conf=/etc/masternodes/mdcr_n1.conf masternode status
+/usr/local/bin/madcoind -conf=/etc/masternodes/xax_n1.conf masternode status
 ```
 
 To wipe the masternode:
 ```bash
-./install.sh -p mdcr -w
+./install.sh -p xax -w
 ```
 
 **FYI:**
