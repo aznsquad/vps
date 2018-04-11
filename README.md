@@ -51,7 +51,7 @@ Wallet and data are stored in:
 ```cd /var/lib/masternodes/mdcrN/```
 where n is the masternode number (1,2, 3...). You will find debug.log here.
 
-A 512M Vultr instance ($2.50/mo) should be able to serve 5-6 masternodes without issue.
+A 512M Vultr instance ($2.50/mo) Ubuntu 16.04 x64 should be able to serve 5-6 masternodes without issue. Be sure to add the SWAP file.
 
 Coin update:
 ```./install.sh -p mdcr -c 4 -u``` (remember to set number after -c to the number of nodes you have running).
