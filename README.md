@@ -1,15 +1,39 @@
-Madcoin-Core Revival Super Short Quick Command Guide:
+## Installation
 
-1. - Login to your VPS instance as root
-2. - ```git clone https://github.com/aznsquad/vps.git && cd vps```
-3. - For ONE MN run: ```./install.sh -p mdcr```, for say, 3 MN, run: ```./install.sh -p mdcr -c 3```
-4. - Place keygen ```nano /etc/masternodes/mdcr_n1.conf```
-5. - Activate the masternode(s) by typing: ```/usr/local/bin/activate_masternodes_mdcr```
-6. - If necessary type ```systemctl restart mdcr_n1``` to restart the node.
-7. -  ```/usr/local/bin/madcoind -conf=/etc/masternodes/mdcr_n1.conf masternode status``` to check the status
+SSH to your VPS and clone the Github repository:
+
+```bash
+git clone https://github.com/aznsquad/vps.git && cd vps
+```
+
+Install & configure your desired master node with options:
+
+```bash
+./install.sh -p pivx
+```
+
+Place keygen in:
+```bash
+nano /etc/masternodes/mdcr_n1.conf
+```
+
+Activate the masternode(s) by typing:
+```bash
+/usr/local/bin/activate_masternodes_mdcr
+```
+
+If necessary to restart the node, type:
+```bash
+systemctl restart mdcr_n1
+```
+
+To check the masternode status:
+```bash
+/usr/local/bin/madcoind -conf=/etc/masternodes/mdcr_n1.conf masternode status
+```
 
 
-Info:
+FYI:
 
 + the wallet and data are stored in ```/var/lib/masternodes/mdcrN/``` where n is the masternode number (1,2, 3...). You will find debug.log here.
 + A 1GB Vultr instance (5 USD one) should be able to serve 5-6 masternodes without issue. Use the top command to monitor mem / cpu usage to judge.
@@ -27,20 +51,6 @@ Feel free to use my reflink to signup and receive a bonus w/ vultr:
 <a href="https://www.vultr.com/?ref=7282775"><img src="https://www.vultr.com/media/banner_2.png" width="468" height="60"></a>
 
 ---
-
-## Installation
-
-SSH to your VPS and clone the Github repository:
-
-```bash
-git clone https://github.com/aznsquad/vps.git && cd vps
-```
-
-Install & configure your desired master node with options:
-
-```bash
-./install.sh -p pivx
-```
 
 ## Examples for typical script invocation
 
@@ -79,7 +89,8 @@ These are only a couple of examples for typical setups. Check my [easy step-by-s
 ## References
 
 ```https://github.com/masternodes/vps.git```
-```https://github.com/damiensgit/vps.git```
+
+
 
 Bitcoin Donation address for aznsquad:
 
