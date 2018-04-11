@@ -17,7 +17,7 @@ Tips:
 
 + the wallet and data are stored in ```/var/lib/masternodes/mdcrN/``` where n is the masternode number (1,2, 3...). You will find debug.log here.
 + A 1GB Vultr instance (5 USD one) should be able to serve 5-6 masternodes without issue. Use the top command to monitor mem / cpu usage to judge.
-+ Want to add another masternode down the line? EZ PZ:  ```./install.sh -p mdcr -c 6``` (assume you had 4 setup before).
++ Want to add another masternode down the line? EZ PZ:  ```./install.sh -p mdcr -c 4``` (assume you had 3 setup before).
 + New coin update? Sure: ```./install.sh -p mdcr -c 4 -u``` (remember to set number after -c to the number of nodes you have running).
 
 
