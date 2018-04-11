@@ -1,0 +1,7 @@
+#!/bin/bash
+# this file contains all commands to compile and install the daemon
+
+cd ~/Tokugawa/src
+make -f makefile.unix # Headless
+strip Tokugawad
+cp Tokugawad ${MNODE_DAEMON}
