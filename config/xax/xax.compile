@@ -6,3 +6,4 @@ chmod +x autogen.sh
 ./configure --disable-dependency-tracking --enable-tests=no --without-gui --without-miniupnpc --with-incompatible-bdb CFLAGS="-march=native" LIBS="-lcurl -lssl -lcrypto -lz"
 chmod +x share/genbuild.sh
 make
+make install
