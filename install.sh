@@ -5,8 +5,8 @@
 #  ██║╚██╗██║██║   ██║██║  ██║██╔══╝  ██║╚██╔╝██║██╔══██║╚════██║   ██║   ██╔══╝  ██╔══██╗
 #  ██║ ╚████║╚██████╔╝██████╔╝███████╗██║ ╚═╝ ██║██║  ██║███████║   ██║   ███████╗██║  ██║
 #  ╚═╝  ╚═══╝ ╚═════╝ ╚═════╝ ╚══════╝╚═╝     ╚═╝╚═╝  ╚═╝╚══════╝   ╚═╝   ╚══════╝╚═╝  ╚═╝
-#                                                              ╚╗ @marsmensch 2016-2018 ╔╝                   				
-#                   
+#                                                              ╚╗ @marsmensch 2016-2018 ╔╝
+#
 # version 	v0.9.6
 # date    	2018-04-05
 #
@@ -43,7 +43,7 @@ cat << "EOF"
                                                              ╚╗ @marsmensch 2016-2018 ╔╝
 EOF
 echo "$(tput sgr0)$(tput setaf 3)Have fun, this is crypto after all!$(tput sgr0)"
-echo "$(tput setaf 6)Donations (BTC): 33ENWZ9RCYBG7nv6ac8KxBUSuQX64Hx3x3"
+echo "$(tput setaf 6)Donations (BTC): 1SzFHBnsYPfcBXTRbPYDWmDWfEvhTankN"
 echo "Questions: marsmensch@protonmail.com$(tput sgr0)"
 }
 
@@ -521,8 +521,8 @@ function print_logo() {
 	if [ -f "${SCRIPTPATH}/assets/$CODENAME.jpg" ]; then
 			jp2a -b --colors --width=56 ${SCRIPTPATH}/assets/${CODENAME}.jpg
 	else
-			jp2a -b --colors --width=56 ${SCRIPTPATH}/assets/default.jpg          
-	fi  
+			jp2a -b --colors --width=56 ${SCRIPTPATH}/assets/default.jpg
+	fi
 
 }
 

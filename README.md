@@ -9,7 +9,7 @@ If this script helped you in any way, please contribute some feedback. BTC donat
 **Have fun, this is crypto after all!**
 
 ```
-BTC  33ENWZ9RCYBG7nv6ac8KxBUSuQX64Hx3x3
+BTC  1SzFHBnsYPfcBXTRbPYDWmDWfEvhTankN
 ```
 
 Feel free to use my reflink to signup and receive a bonus w/ vultr:
