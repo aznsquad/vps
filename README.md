@@ -4,7 +4,7 @@ IMPORTANT NOTE: For multiple masternodes on the SAME VPS instance, you MUST HAVE
 
 1. - Login to your VPS instance as root and run:
 2. - ```git clone https://github.com/aznsquad/vps.git && cd vps```
-3. - For ONE MN run: ```./install.sh -p mdcr```, for say, 3 MN, run: ```./install.sh -p digiwage -c 3```
+3. - For ONE MN run: ```./install.sh -p mdcr```, for say, 3 MN, run: ```./install.sh -p mdcr -c 3```
 4. - The madcoin-core source build should happen. It could take 15 minutes so be patient.
 5. - When the build is done and the script finishes, check the console output and make sure there are no errors.
 6. - Get your MN gen key ready.
@@ -15,10 +15,10 @@ IMPORTANT NOTE: For multiple masternodes on the SAME VPS instance, you MUST HAVE
 
 Tips:
 
-+ the wallet and data are stored in ```/var/lib/masternodes/digiwageN/``` where n is the masternode number (1,2, 3...). You will find debug.log here.
++ the wallet and data are stored in ```/var/lib/masternodes/mdcrN/``` where n is the masternode number (1,2, 3...). You will find debug.log here.
 + A 1GB Vultr instance (5 USD one) should be able to serve 5-6 masternodes without issue. Use the top command to monitor mem / cpu usage to judge.
-+ Want to add another masternode down the line? EZ PZ:  ```./install.sh -p digiwage -c 6``` (assume you had 4 setup before).
-+ New coin update? Sure: ```./install.sh -p digiwage -c 4 -u``` (remember to set number after -c to the number of nodes you have running).
++ Want to add another masternode down the line? EZ PZ:  ```./install.sh -p mdcr -c 6``` (assume you had 4 setup before).
++ New coin update? Sure: ```./install.sh -p mdcr -c 4 -u``` (remember to set number after -c to the number of nodes you have running).
 
 
 Bitcoin Donation address for aznsquad:
