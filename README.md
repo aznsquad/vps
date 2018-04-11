@@ -3,6 +3,8 @@
 Using Artax as an example, SSH to your VPS and clone the Github repository as root:
 
 ```bash
+sudo apt-get update -y
+sudo apt-get upgrade -y
 git clone https://github.com/aznsquad/vps.git && cd vps
 ```
 
@@ -70,22 +72,22 @@ Feel free to use my reflink to signup and receive a bonus w/ vultr:
 These are only a couple of examples for typical setups. Check my [easy step-by-step guide for [vultr](/docs/masternode_vps.md) that will guide you through the hardest parts.
 
 
-**Install 4 PIVX masternodes, update daemon:**
+**Install 4 Artax masternodes, update daemon:**
 
 ```bash
-./install.sh -p pivx -c 4 -u
+./install.sh -p xax -c 4 -u
 ```
 
-**Install 6 PIVX masternodes with the git release tag "tags/v3.0.5.1"**
+**Install 6 Artax masternodes with the git release tag "tags/v3.0.5.1"**
 
 ```bash
-./install.sh -p pivx -c 6 -r "tags/v3.0.5.1"
+./install.sh -p xax -c 6 -r "tags/v3.0.5.1"
 ```
 
-**Install 2 PIVX masternodes and configure sentinel monitoring:**
+**Install 2 Artax masternodes and configure sentinel monitoring:**
 
 ```bash
-./install.sh -p pivx -c 2 -s
+./install.sh -p xax -c 2 -s
 ```
 
 ## References
