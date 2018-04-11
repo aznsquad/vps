@@ -6,10 +6,15 @@ SSH to your VPS and clone the Github repository:
 git clone https://github.com/aznsquad/vps.git && cd vps
 ```
 
-Install & configure your desired master node with options:
+Install & configure your desired masternode with options:
 
 ```bash
-./install.sh -p pivx
+./install.sh -p mdcr
+```
+
+or Install 2 more masternodes:
+```bash
+./install.sh -p mdcr -c 2
 ```
 
 Place keygen in:
@@ -32,6 +37,10 @@ To check the masternode status:
 /usr/local/bin/madcoind -conf=/etc/masternodes/mdcr_n1.conf masternode status
 ```
 
+To wipe the masternode:
+```bash
+./install.sh -p mdcr -w
+```
 
 FYI:
 
@@ -43,9 +52,9 @@ FYI:
 
 Bitcoin Donation address for aznsquad:
 
-```
-BTC 1SzFHBnsYPfcBXTRbPYDWmDWfEvhTankN
-```
+
+BTC ```1SzFHBnsYPfcBXTRbPYDWmDWfEvhTankN```
+
 
 Feel free to use my reflink to signup and receive a bonus w/ vultr:
 <a href="https://www.vultr.com/?ref=7282775"><img src="https://www.vultr.com/media/banner_2.png" width="468" height="60"></a>
@@ -94,6 +103,5 @@ These are only a couple of examples for typical setups. Check my [easy step-by-s
 
 Bitcoin Donation address for aznsquad:
 
-```
-BTC 1SzFHBnsYPfcBXTRbPYDWmDWfEvhTankN
-```
+
+BTC ```1SzFHBnsYPfcBXTRbPYDWmDWfEvhTankN```
