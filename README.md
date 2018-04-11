@@ -25,6 +25,7 @@ Bitcoin Donation address for aznsquad:
 
 ```
 BTC  1SzFHBnsYPfcBXTRbPYDWmDWfEvhTankN
+```
 
 # Nodemaster
 
