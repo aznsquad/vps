@@ -1,19 +1,15 @@
-Madcoin-Core Revival quick guide:
+Madcoin-Core Revival Super Short Quick Command Guide:
 
-IMPORTANT NOTE: For multiple masternodes on the SAME VPS instance, you MUST HAVE IPv6 enabled otherwise things won't work. For vultr it's a simple checkbox when creating a VPS instance but for digital ocean a little more work is required (see their IPv6 guide).
-
-1. - Login to your VPS instance as root and run:
+1. - Login to your VPS instance as root
 2. - ```git clone https://github.com/aznsquad/vps.git && cd vps```
 3. - For ONE MN run: ```./install.sh -p mdcr```, for say, 3 MN, run: ```./install.sh -p mdcr -c 3```
-4. - The madcoin-core source build should happen. It could take 15 minutes so be patient.
-5. - When the build is done and the script finishes, check the console output and make sure there are no errors.
-6. - Get your MN gen key ready.
-7. - On the VPS again, run ```nano /etc/masternodes/mdcr_n1.conf``` and place your genkey after ```masternodeprivkey=``` as shown.
-8. - Now you can activate the digiwage masternode(s) by running: ```/usr/local/bin/activate_masternodes_mdcr```
-9. - This will install the daemons as ubuntu services so you can stop/restart them easily any time by running: ```systemctl restart mdcr_n1``` (where n1 is the MN number you want to restart)
-10. - To interact with the madcoin-core cli, you must always specify the config file so e.g. to check the status of the masternode run: ```/usr/local/bin/madcoind -conf=/etc/masternodes/mdcr_n1.conf masternode status```
+4. - Place keygen ```nano /etc/masternodes/mdcr_n1.conf```
+5. - Activate the masternode(s) by typing: ```/usr/local/bin/activate_masternodes_mdcr```
+6. - If necessary type ```systemctl restart mdcr_n1``` to restart the node.
+7. -  ```/usr/local/bin/madcoind -conf=/etc/masternodes/mdcr_n1.conf masternode status``` to check the status
 
-Tips:
+
+Info:
 
 + the wallet and data are stored in ```/var/lib/masternodes/mdcrN/``` where n is the masternode number (1,2, 3...). You will find debug.log here.
 + A 1GB Vultr instance (5 USD one) should be able to serve 5-6 masternodes without issue. Use the top command to monitor mem / cpu usage to judge.
@@ -24,21 +20,7 @@ Tips:
 Bitcoin Donation address for aznsquad:
 
 ```
-BTC  1SzFHBnsYPfcBXTRbPYDWmDWfEvhTankN
-```
-
-# Nodemaster
-
-The **Nodemaster** scripts is a collection of utilities to manage, setup and update masternode instances.
-
-I am quite confident this is the single best and almost effortless way to setup different crypto masternodes, without bothering too much about the setup part.
-
-If this script helped you in any way, please contribute some feedback. BTC donations also welcome and never forget:
-
-**Have fun, this is crypto after all!**
-
-```
-BTC  1SzFHBnsYPfcBXTRbPYDWmDWfEvhTankN
+BTC 1SzFHBnsYPfcBXTRbPYDWmDWfEvhTankN
 ```
 
 Feel free to use my reflink to signup and receive a bonus w/ vultr:
@@ -94,4 +76,13 @@ These are only a couple of examples for typical setups. Check my [easy step-by-s
 ./install.sh -p pivx -c 2 -s
 ```
 
-Originally from https://github.com/masternodes/vps.git
+## References
+
+```https://github.com/masternodes/vps.git```
+```https://github.com/damiensgit/vps.git```
+
+Bitcoin Donation address for aznsquad:
+
+```
+BTC 1SzFHBnsYPfcBXTRbPYDWmDWfEvhTankN
+```
