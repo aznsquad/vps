@@ -15,7 +15,7 @@ Install & configure your desired masternode with options:
 ./install.sh -p xax
 ```
 
-or Install 2 more masternodes:
+or Install 2 masternodes:
 ```bash
 ./install.sh -p xax -c 2
 ```
