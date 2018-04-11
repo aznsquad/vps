@@ -5,6 +5,7 @@ Using Artax as an example, SSH to your VPS and clone the Github repository as ro
 ```bash
 sudo apt-get update -y
 sudo apt-get upgrade -y
+sudo apt-get dist-upgrade -y
 git clone https://github.com/aznsquad/vps.git && cd vps
 ```
 
