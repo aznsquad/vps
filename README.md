@@ -1,12 +1,12 @@
 ## Installation
 
-Using Artax as an example, SSH to your VPS and clone the Github repository as root:
+Using Artax as an example, SSH to your VPS, update and upgrade your server, clone the Github repository as root:
 
 ```bash
-$ sudo apt-get update -y
-$ sudo apt-get upgrade -y
-$ sudo apt-get dist-upgrade -y
-$ git clone https://github.com/aznsquad/vps.git && cd vps
+sudo apt-get update -y
+sudo apt-get upgrade -y
+sudo apt-get dist-upgrade -y
+git clone https://github.com/aznsquad/vps.git && cd vps
 ```
 
 Install & configure your desired masternode with options:
@@ -45,7 +45,7 @@ To wipe the masternode:
 ./install.sh -p xax -w
 ```
 
-**Note**
+**NOTE**
 
 Add your masternode private key in:
 ```bash
@@ -85,7 +85,7 @@ These are only a couple of examples for typical setups. Check my [easy step-by-s
 ./install.sh -p xax -c 4 -u
 ```
 
-**Install 6 Artax masternodes with the git release tag "tags/v3.0.5.1"**
+**Install 6 Artax masternodes with the git release tag "tags/v1.0.0.1"**
 
 ```bash
 ./install.sh -p xax -c 6 -r "tags/v1.0.0.1"
