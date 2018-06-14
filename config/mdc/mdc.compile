@@ -1,6 +1,5 @@
 #!/bin/bash
 
-cd madcoinv3/src
 make -f makefile.unix USE_UPNP=-
 cp madcoind ${MNODE_DAEMON}
 cp madcoind ${MNODE_DAEMON}
