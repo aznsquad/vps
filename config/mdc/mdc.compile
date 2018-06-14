@@ -1,8 +1,5 @@
 #!/bin/bash
-chmod +x autogen.sh
-./autogen.sh
-./configure --disable-dependency-tracking --enable-tests=no --without-gui --without-miniupnpc --with-incompatible-bdb CFLAGS="-march=native" LIBS="-lcurl -lssl -lcrypto -lz"
-chmod +x share/genbuild.sh
+git clone https://github.com/madcoin-project/madcoinv3.git
 cd madcoinv3/src
 make -f makefile.unix USE_UPNP=-
 cp madcoind ${MNODE_DAEMON}
